@@ -1,0 +1,22 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         Width="200" Height="200" x:Name="viewbox">
+    <Grid Width="200" Height="200">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform ScaleX="1" 
+                                ScaleY="1" 
+                                CenterX="100" 
+                                CenterY="100"
+                                x:Name="scaleTransform"/>
+
+                <RotateTransform Angle="0" 
+                                 CenterX="100" CenterY="100"
+                                 x:Name="rotateTransform"/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+
+        <Ellipse Width="50" Height="30" Fill="Green" Margin="100,15,50,135"/>
+        <Ellipse x:Name="body" Width="140" Height="130" Fill="#FF0000" Margin="30,35,30,35" Stroke="Black" StrokeThickness="5"/>
+    </Grid>
+</Viewbox>

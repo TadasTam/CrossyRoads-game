@@ -1,0 +1,45 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         Width="400" Height="200" x:Name="viewbox">
+    <Grid x:Name="grid" Width="400" Height="200" Opacity="1.0">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform ScaleX="1" 
+                                ScaleY="1" 
+                                CenterX="100" 
+                                CenterY="100"
+                                x:Name="scaleTransform"/>
+
+                <RotateTransform Angle="0" 
+                                 CenterX="100" CenterY="100"
+                                 x:Name="rotateTransform"/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+
+        <!-- Tires -->
+        <Rectangle x:Name="tire1" Width="40" Height="15" Fill="#000000" Margin="290,145,70,0"/>
+        <Rectangle x:Name="tire2" Width="40" Height="15" Fill="#000000" Margin="70,145,290,0"/>
+        <Rectangle x:Name="tire3" Width="40" Height="15" Fill="#000000" Margin="290,0,70,145"/>
+        <Rectangle x:Name="tire4" Width="40" Height="15" Fill="#000000" Margin="70,0,290,145"/>
+
+        <!-- Car body -->
+        <Rectangle x:Name="body" Width="360" Height="140" Fill="#FFC0CB"/>
+
+        <!-- Front window -->
+        <Rectangle x:Name="frontWindow" Width="70" Height="80" Fill="#ADD8E6" Opacity="0.5" Margin="55,40,275,40"/>
+
+        <!-- Rear window -->
+        <Rectangle x:Name="rearWindow" Fill="#ADD8E6" Opacity="0.5" Margin="239,52,70,52"/>
+        <!-- Adjusted for new height -->
+
+        <!-- Headlights -->
+        <Ellipse x:Name="headlight1" Width="20" Height="10" Fill="Yellow" Margin="370,40,10,150"/>
+        <Ellipse x:Name="headlight2" Width="20" Height="10" Fill="Yellow" Margin="370,150,10,40"/>
+
+        <!-- Tail lights -->
+        <Ellipse x:Name="taillight1" Width="20" Height="10" Fill="Red" Margin="10,35,370,155"/>
+        <Ellipse x:Name="taillight2" Width="20" Height="10" Fill="Red" Margin="10,155,370,35"/>
+
+        <Rectangle x:Name="collision" Fill="#00000000" Margin="20,35,20,35"/>
+    </Grid>
+</Viewbox>

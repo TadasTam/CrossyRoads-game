@@ -1,0 +1,36 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         Width="200" Height="200" x:Name="viewbox">
+    <Grid Width="200" Height="200">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform ScaleX="1" 
+                                ScaleY="1" 
+                                CenterX="100" 
+                                CenterY="100"
+                                x:Name="scaleTransform"/>
+
+                <RotateTransform Angle="0" 
+                                 CenterX="100" CenterY="100"
+                                 x:Name="rotateTransform"/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+
+        <!-- Frog Body -->
+        <Ellipse x:Name="body" Width="140" Height="130" Fill="#4CAF50" Margin="30,35,30,35" Stroke="Black" StrokeThickness="5"/>
+
+        <!-- Eyes -->
+        <Ellipse Width="50" Height="50" Fill="White" Margin="50,15,100,135"/>
+        <Ellipse Width="50" Height="50" Fill="White" Margin="100,15,50,135"/>
+        <Ellipse Width="24" Height="24" Fill="Black" Margin="63,28,113,148"/>
+        <Ellipse Width="24" Height="24" Fill="Black" Margin="113,28,63,148"/>
+
+        <!-- Name -->
+        <TextBlock  x:Name="name" FontSize="50" TextAlignment="Center" Margin="-234,131,-234,0"></TextBlock>
+        
+        <TextBlock  x:Name="score" FontSize="50" TextAlignment="Center" Margin="0,70,0,61"></TextBlock>
+        
+        <TextBlock  x:Name="spellText" FontSize="50" Margin="134,-3,-401,135"></TextBlock>
+        <TextBlock  x:Name="heartText" FontSize="50" Margin="134,46,-401,84"></TextBlock>
+    </Grid>
+</Viewbox>
